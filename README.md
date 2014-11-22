@@ -1,14 +1,14 @@
 Footprints
 ==========
 
-Your kids memories, safe and private in the cloud.
+Your kids' memories, safe and private in the cloud.
 
 Stack
 ====
 
 Backend: Node.js + Express + MongoDB  
 Storage: Kloudless  
-Frontend: ???
+Frontend: Jade + Bootstrap
 
 Each user has an `Account` on Kloudless. Each `Account` has `Folder` for each kid. Each `Folder` has files in it.
 
