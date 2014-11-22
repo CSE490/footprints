@@ -7,6 +7,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var compress = require('compression');
 var methodOverride = require('method-override');
+var session = require('express-session')
 
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
