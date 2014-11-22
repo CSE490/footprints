@@ -42,7 +42,11 @@ module.exports = function(app, config) {
   app.use(express.static(config.root + '/public'));
   app.use(methodOverride());
 
-  app.use(session({ secret: 'd+>sJ|0(4hX]H-xyZ3<v|aL3Xgr>L:d>n)SibjA; d84{`|.#I8AW#nHQR{L@.Yy' }));
+  app.use(session({
+    secret: 'd+>sJ|0(4hX]H-xyZ3<v|aL3Xgr>L:d>n)SibjA; d84{`|.#I8AW#nHQR{L@.Yy',
+    resave: true,
+    saveUninitialized: true
+  }));
   app.use(passport.initialize());
   app.use(passport.session());
 
